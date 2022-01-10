@@ -24,13 +24,11 @@ public class Main {
 
     public static void main(String[] args) {
         int n=0;
-        Scanner scan = new Scanner(System.in);
-
-        do {
-            System.out.println("Nhập n lớn hơn 0");
-            n = scan.nextInt();
-            System.out.println(isPrime(n)?"IS PRIME":"NOT PRIME");
+        for (int i=2; n<20; i++){
+            if (isPrime(i)){
+                System.out.println(n+1+": " + i);
+                n++;
+            }
         }
-        while(n<=0);
     }
 }

@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 
+    private static int a[];
+
     private static boolean isPrime(int n){
         if (n==2 || n==3){
             return true;
@@ -23,11 +25,24 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int n=0;
-        for (int i=2; n<20; i++){
+        a = new int[101];
+
+        for (int i=0; i<=100; i++){
+            a[i]=0;
+        }
+
+        for (int i=2; i<=100; i++){
             if (isPrime(i)){
-                System.out.println(n+1+": " + i);
-                n++;
+                a[i] = 1;
+                for (int j=i*i; j<=100; j++){
+                    a[j]=0;
+                }
+            }
+        }
+
+        for (int i=2; i<=100; i++){
+            if (a[i] == 1){
+                System.out.println(i);
             }
         }
     }

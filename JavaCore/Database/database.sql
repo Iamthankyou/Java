@@ -1,19 +1,58 @@
-CREATE VIEW customer_views AS
+USE Demo;
 
-SELECT customerNumber, customerName, phone
+CREATE TABLE Products (
+	id int PRIMARY KEY,
+    productCode nvarchar(100),
+    productName nvarchar(100),
+    productPrice double,
+    productAmount int,
+    productDescription nvarchar(100),
+    productStatus nvarchar(100)
+);
 
-FROM  customers;
+INSERT INTO Products VALUES(1,'A','A',1000,1,'A','A');
+INSERT INTO Products VALUES(2,'B','B',1000,1,'B','B');
+INSERT INTO Products VALUES(3,'C','C',1000,1,'C','C');
+INSERT INTO Products VALUES(4,'D','D',1000,1,'D','D');
 
-select * from customer_views;
+SELECT * FROM Products;
 
-CREATE OR REPLACE VIEW customer_views AS
+ALTER TABLE Products
+ADD UNIQUE unique_index (productCode);
 
-SELECT customerNumber, customerName, contactFirstName, contactLastName, phone
+ALTER TABLE Products
+ADD INDEX composite_index (productName, productPrice);
 
-FROM customers
+CREATE VIEW view_product AS 
+SELECT productCode,productName,productPrice,productStatus FROM demo;
 
-WHERE city = 'Nantes';
+DROP VIEW view_demo;
 
-select * from customer_views;
+Delimiter //
+Create Procedure allrecords()
+    BEGIN
+    Select * from Products;
+    END//
+DELIMITER ;
 
-DROP VIEW customer_views;
+Delimiter //
+Create Procedure addrecord(
+	in productcode varchar(45),
+    in productname varchar(45),
+    in productprice double,
+    in productamount int
+)
+    BEGIN
+    INSERT INTO `demo` (`productCode`, `productName`, `productPrice`, `productAmount`, `productDescription`, `productStatus`) VALUES (productcode, productname, productprice, productamount, 'No Description', 'None');
+    END//
+DELIMITER ;
+
+DELIMITER //
+Create Procedure deleterecord(in iddelete int)
+    BEGIN
+    DELETE FROM `demo` WHERE (`id` = iddelete )
+
+    END//
+DELIMITER ;
+
+

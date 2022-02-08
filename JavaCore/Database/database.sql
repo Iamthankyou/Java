@@ -1,71 +1,19 @@
-DELIMITER //
+CREATE VIEW customer_views AS
 
-CREATE PROCEDURE getCusById
+SELECT customerNumber, customerName, phone
 
-(IN cusNum INT(11))
+FROM  customers;
 
-BEGIN
+select * from customer_views;
 
-  SELECT * FROM customers WHERE customerNumber = cusNum;
+CREATE OR REPLACE VIEW customer_views AS
 
-END //
+SELECT customerNumber, customerName, contactFirstName, contactLastName, phone
 
-DELIMITER ;
+FROM customers
 
-call getCusById(175);
+WHERE city = 'Nantes';
 
-DELIMITER //
+select * from customer_views;
 
-CREATE PROCEDURE GetCustomersCountByCity(
-
-    IN  in_city VARCHAR(50),
-
-    OUT total INT
-
-)
-
-BEGIN
-
-    SELECT COUNT(customerNumber)
-
-    INTO total
-
-    FROM customers
-
-    WHERE city = in_city;
-
-END//
-
-DELIMITER ;
-
-CALL GetCustomersCountByCity('Lyon',@total);
-
-SELECT @total;
-
-DELIMITER //
-
-CREATE PROCEDURE SetCounter(
-
-    INOUT counter INT,
-
-    IN inc INT
-
-)
-
-BEGIN
-
-    SET counter = counter + inc;
-
-END//
-
-DELIMITER ;
-
-SET @counter = 1;
-
-CALL SetCounter(@counter,1);
-
-CALL SetCounter(@counter,1);
-
-CALL SetCounter(@counter,5);
-
-SELECT @counter;
+DROP VIEW customer_views;

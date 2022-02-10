@@ -1,9 +1,18 @@
 body {
-    font-family: Verdana,sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 0.9em;
 }
 
-header, footer {
+.main{
+    display: flex;
+}
+
+sidebar{
+    flex: 0 0 18%;
+}
+
+header,
+footer {
     padding: 10px;
     color: white;
     background-color: black;

@@ -2,44 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo trang đọc truyện ngắn</title>
+    <title>Sử dụng Boxmodel</title>
+    <style>
+        .boxmodel{
+            margin: 0 auto;
+            width: 800px;
+            border: 10px;
+            padding: 10px;
+            border-color: chartreuse aqua blue blueviolet;
+            border-style: solid;
+        }
+        .boxmodel p{
+            border: 3px dotted darkred;
+            padding: 10px;
+        }
+        #boxmodel1{
+            margin-bottom: 20px;
+        }
+        #boxmodel2{
+            margin-bottom: 40px;
+        }
+        #boxmodel3{
+            margin-bottom: 60px;
+        }
+    </style>
 </head>
 <body>
-    <div class="content">
-        <div id="header">
-            <img  src="https://images.unsplash.com/photo-1644333192124-24d6b70f7c12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="image">
-        </div>
-        <div class="main">
-            <h1>Muc luc</h1>
-            <ul>
-                <li>
-                    <a href="#id1">1</a>
-                </li>
-                <li>
-                    <a href="#id2">2</a>
-                </li>
-            </ul>
-            <h3 id="id1">Heading 1</h3>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius? Perferendis consectetur nihil eum illo nulla ducimus quasi nisi. Nulla autem id doloremque sed aliquam earum velit quaerat sit maxime. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Veritatis molestiae quam, quia exercitationem ea ab, modi facilis veniam nisi quod doloremque nulla placeat aut corrupti. Nam, voluptate! Cum, commodi veritatis.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius? Perferendis consectetur nihil eum illo nulla ducimus quasi nisi. Nulla autem id doloremque sed aliquam earum velit quaerat sit maxime. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Veritatis molestiae quam, quia exercitationem ea ab, modi facilis veniam nisi quod doloremque nulla placeat aut corrupti. Nam, voluptate! Cum, commodi veritatis.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius? Perferendis consectetur nihil eum illo nulla ducimus quasi nisi. Nulla autem id doloremque sed aliquam earum velit quaerat sit maxime. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Veritatis molestiae quam, quia exercitationem ea ab, modi facilis veniam nisi quod doloremque nulla placeat aut corrupti. Nam, voluptate! Cum, commodi veritatis.</div>
-            <h3 id="id2">Heading 2</h3>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius? Perferendis consectetur nihil eum illo nulla ducimus quasi nisi. Nulla autem id doloremque sed aliquam earum velit quaerat sit maxime. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Veritatis molestiae quam, quia exercitationem ea ab, modi facilis veniam nisi quod doloremque nulla placeat aut corrupti. Nam, voluptate! Cum, commodi veritatis.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius? Perferendis consectetur nihil eum illo nulla ducimus quasi nisi. Nulla autem id doloremque sed aliquam earum velit quaerat sit maxime. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Veritatis molestiae quam, quia exercitationem ea ab, modi facilis veniam nisi quod doloremque nulla placeat aut corrupti. Nam, voluptate! Cum, commodi veritatis.</div>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, eius? Perferendis consectetur nihil eum illo nulla ducimus quasi nisi. Nulla autem id doloremque sed aliquam earum velit quaerat sit maxime. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Veritatis molestiae quam, quia exercitationem ea ab, modi facilis veniam nisi quod doloremque nulla placeat aut corrupti. Nam, voluptate! Cum, commodi veritatis.</div>
-            
-            </body>
-        </div>
-
-    </div>
-
+<div class="boxmodel">
+    <p id="boxmodel1">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+        Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+    <p id="boxmodel2">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+        Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+    <p id="boxmodel3">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+        Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+</div>
 </body>
 </html>

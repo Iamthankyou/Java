@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Show-List-Customer:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Show-List-Customer</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Show-List-Customer-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Show-List-Customer:war exploded" />
+    </root>
+  </artifact>
+</component>

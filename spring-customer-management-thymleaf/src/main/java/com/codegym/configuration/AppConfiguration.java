@@ -15,7 +15,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.codegym.controller")
+@ComponentScan("com.codegym")
 public class AppConfiguration implements WebMvcConfigurer,  ApplicationContextAware {
 
     private ApplicationContext applicationContext;
@@ -30,7 +30,7 @@ public class AppConfiguration implements WebMvcConfigurer,  ApplicationContextAw
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
         templateResolver.setApplicationContext(applicationContext);
-        templateResolver.setPrefix("/WEB-INF/views");
+        templateResolver.setPrefix("/WEB-INF/templates/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode(TemplateMode.HTML);
         templateResolver.setCharacterEncoding("UTF-8");

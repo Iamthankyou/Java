@@ -1,12 +1,20 @@
-com/codegym/configuration/AppConfiguration.java
- com.codegym.configuration.AppConfiguration
-com/codegym/service/CustomerService.java
- com.codegym.service.CustomerService
-com/codegym/model/Customer.java
- com.codegym.model.Customer
+com/codegym/entities/User.java
+ com.codegym.entities.User
+com/codegym/services/IProductServices.java
+ com.codegym.services.IProductServices
+com/codegym/entities/Login.java
+ com.codegym.entities.Login
+com/codegym/entities/Comment.java
+ com.codegym.entities.Comment
+com/codegym/entities/Product.java
+ com.codegym.entities.Product
 com/codegym/configuration/AppInitializer.java
  com.codegym.configuration.AppInitializer
-com/codegym/service/ICustomerService.java
- com.codegym.service.ICustomerService
-com/codegym/controller/CustomerController.java
- com.codegym.controller.CustomerController
+com/codegym/configuration/AppConfiguration.java
+ com.codegym.configuration.AppConfiguration
+com/codegym/repositories/ProductRepository.java
+ com.codegym.repositories.ProductRepository
+com/codegym/controller/ProductController.java
+ com.codegym.controller.ProductController
+com/codegym/services/interfaces/ProductServices.java
+ com.codegym.services.interfaces.ProductServices

@@ -19,8 +19,7 @@ public class UserController {
         return modelAndView;
     }
 
-    @PostMapping("/login")d .
-
+    @PostMapping("/login")
     public ModelAndView login(@ModelAttribute("login") Login login){
         User user = UserDao.checkLogin(login);
 

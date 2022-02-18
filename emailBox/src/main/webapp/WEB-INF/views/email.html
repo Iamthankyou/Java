@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List email</title>
+    <style>
+        table,td{
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>languages</td>
+        <td>pageSize</td>
+        <td>spamsFillter</td>
+        <td>signature</td>
+    </tr>
+    <th:block th:each="e: ${list}">
+        <tr>
+         <td th:text="${e.languages}"></td>
+         <td th:text="${e.pageSize}"></td>
+         <td th:text="${e.spamsFillter}"></td>
+         <td th:text="${e.signature}"></td>
+         <td ><a th:href="@{/email/edit(id=${e.id})}" >Edit</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

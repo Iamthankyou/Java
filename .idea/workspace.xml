@@ -7,22 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4859ed9f-9d40-4df8-8b39-9ee26fcee884" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/java/com/codegym/controller/UserServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/java/com/codegym/dao/IUserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/java/com/codegym/dao/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/java/com/codegym/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/webapp/user/create.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/webapp/user/edit.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/webapp/user/find.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jwbd-user-manager/src/main/webapp/user/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/.idea/artifacts/jwbd_packaging_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/jwbd-packaging.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/out/artifacts/jwbd_packaging_jar/jwbd-packaging.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/out/production/jwbd-packaging/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/out/production/jwbd-packaging/com/codegym/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jwbd-packaging/src/com/codegym/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/build/classes/java/main/com/codegym/controller/GreetingController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/build/libs/SpringGreeting-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_greeting/build/tmp/war/MANIFEST.MF" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +67,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OutSource/jwbd-packaging" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring_greeting" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -69,6 +91,7 @@
       <workItem from="1644981456647" duration="3939000" />
       <workItem from="1645062614146" duration="1903000" />
       <workItem from="1645065579963" duration="908000" />
+      <workItem from="1645071892407" duration="90000" />
     </task>
     <servers />
   </component>

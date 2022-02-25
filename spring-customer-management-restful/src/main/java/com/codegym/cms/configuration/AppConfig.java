@@ -1,4 +1,4 @@
-package com.codegym;
+package com.codegym.cms.configuration;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -31,10 +31,10 @@ import java.util.Properties;
 @Configuration
 @EnableWebMvc
 @EnableTransactionManagement
-@EnableJpaRepositories("com.codegym.repository")
-@ComponentScan("com.codegym")
+@EnableJpaRepositories("com.codegym.cms.repository")
+@ComponentScan("com.codegym.cms")
 @EnableSpringDataWebSupport
-public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAware {
+public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
 
     private ApplicationContext applicationContext;
 
@@ -81,7 +81,7 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("com.codegym.model");
+        em.setPackagesToScan("com.codegym.cms.model");
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
@@ -93,7 +93,7 @@ public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/demo-shopping-cart");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/cms");
         dataSource.setUsername("root");
         dataSource.setPassword("123456");
         return dataSource;

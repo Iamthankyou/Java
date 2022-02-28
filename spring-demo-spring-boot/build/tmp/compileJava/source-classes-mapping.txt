@@ -1,4 +1,0 @@
-com/codegym/demo/controller/GreetingController.java
- com.codegym.demo.controller.GreetingController
-com/codegym/demo/DemoApplication.java
- com.codegym.demo.DemoApplication
